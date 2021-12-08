@@ -124,6 +124,7 @@ const workoutSeed = [
     ],
   },
 ];
+// each of those (-9, ... ,-1) is subtracting days off of today's date, like 1 day a go, 2 days ago...
 
 db.Workout.deleteMany({})
   .then(() => db.Workout.collection.insertMany(workoutSeed))
