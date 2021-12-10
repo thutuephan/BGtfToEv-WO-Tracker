@@ -4,7 +4,12 @@ const Workout = require('../models/Workout');
 
 // view workout
 router.get('/api/workouts', (req, res) => {
-    Workout.find({})
+    Workout.aggregate([{ 
+        $addFields: {
+            totalDuration: {$sum: "$exercises.duration"} // $ before exercises represent the array
+        }
+    }])
+
         .then(workout_db => {
         res.json(workout_db);
         })
@@ -29,7 +34,7 @@ router.post('/api/workouts', (req, res) => {
 
 
 router.put('/api/workouts/:id', ({ body, params }, res) => {
-    Workout.findOneAndUpdate(
+    Workout.findByIdAndUpdate(
         params.id,
         {$push: {exercises: body}},
         {new: true}
@@ -43,17 +48,23 @@ router.put('/api/workouts/:id', ({ body, params }, res) => {
 })
 
 
-// i need ot order result
-// app.post("/submit", ({ body }, res) => {
-//     db.Note.create(body)
-//       .then(({ _id }) => db.User.findOneAndUpdate({}, { $push: { notes: _id } }, { new: true }))
-//       .then(dbUser => {
-//         res.json(dbUser);
-//       })
-//       .catch(err => {
-//         res.json(err);
-//       });
-//   });
-  
+// range route
+router.get('/api/workouts/range', (req, res) => {
+
+    Workout.aggregate([{ 
+        $addFields: {
+            totalDuration: {$sum: "$exercises.duration"} // $ before exercises represent the array
+        }
+    }])
+
+        .then(workout_db => {
+        res.json(workout_db);
+        })
+        .catch(err => {
+        res.json(err);
+        });
+    
+
+})  
 
 module.exports = router;
