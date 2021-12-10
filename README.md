@@ -5,7 +5,7 @@
   > Keep smiling and workout harder
   
   ## Description
-    This fitness tracker app is created by using Mongo database with a Mongoose schema and hadle routes with Express. The user can easily track his daily workouts with the organized details such as date; name, type, total duration, sets, weight, reps of each exercise. 
+    This fitness tracker app is created by using Mongo database with a Mongoose schema and handle routes with Express, CRUD. The user can easily track his daily workouts with the organized details such as date; name, type, total duration, sets, weight, reps of each exercise. 
   
 
   ## Table of Contents
@@ -20,24 +20,23 @@
 
   ## Installation
   1. Create the file packages include `.gitignore` file `node_modules/`, `package-lock.json`, `package.json`. 
-  2. Run the command-lines to install packages and libraries; navigate to http://localhost:3001/ to see the page
+  2. Run the command-lines to install packages and libraries; navigate to http://localhost:3000/ to see the page
     `npm install` 
     `npm run watch`
     `npm run seed`
 
   ## Usage
-  * The app will allow users to create, save and delete notes. When users get on the landing page, they will be presented a link to a notes page. By clicking on the new note icon (+), users write new note title and note text; then a SAVE icon appears in the navigation at the top right corner of the page next to the (+) icon.
-    * When user clicks on an existing note in the left-hand column, the note's content appears in the right-hand column.
-    * To delete the note that the user doesn not need anymore, click on the red trash can icon next to the note title and it will disappear.
-    
+  * The app will allow users to view and track daily workouts. When users get on the landing page, they will be presented a board with 2 options which are continue workout and new workout. By clicking on each button, a user can get, create or/and update new workout plan.
+  * The user can view the combined weight of multiple exercises from the past seven workouts on the stats page.
+  * The user can view the total duration of each workout from the past seven workouts on the stats page.
+
   ## Links
   * The URL of the GitHub repository with a unique name and a README describing the project: https://github.com/thutuephan/BGtfToEv-WO-Tracker
   * The heroku URL of the functional, deployed application: https://alice-fitness-tracker.herokuapp.com/)  
 
   ## Screenshots
-  ![landing-page](https://github.com/thutuephan/MASBH-HandyNoteTaker/blob/main/public/assets/images/Landing-page.PNG)
-  ![writing-new-note](https://github.com/thutuephan/MASBH-HandyNoteTaker/blob/main/public/assets/images/Writing-new-note.PNG)
-  ![deleting-note](https://github.com/thutuephan/MASBH-HandyNoteTaker/blob/main/public/assets/images/Deleting-finishpayroll.PNG)
+  ![fitness-tracker](https://github.com/thutuephan/MASBH-HandyNoteTaker/blob/main/public/assets/images/Landing-page.PNG)
+  ![fitness-dashboard-graph](https://github.com/thutuephan/MASBH-HandyNoteTaker/blob/main/public/assets/images/Writing-new-note.PNG)
 
   ## Credits
   * THU PHAN  
