@@ -48,7 +48,7 @@ router.put('/api/workouts/:id', ({ body, params }, res) => {
 })
 
 
-// range route
+// calculate the sum of total duration of each workout
 router.get('/api/workouts/range', (req, res) => {
 
     Workout.aggregate([{ 

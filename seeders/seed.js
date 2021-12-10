@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const db = require('../models');
 
+// connect mongo atlas
 mongoose.connect('mongodb+srv://Alice:PasswordMongo1!@cluster0.mp04l.mongodb.net/workout_db?retryWrites=true&w=majority'||'mongodb://localhost/workout', {
   useNewUrlParser: true,
   useFindAndModify: false,
