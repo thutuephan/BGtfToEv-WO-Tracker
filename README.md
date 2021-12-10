@@ -35,8 +35,8 @@
   * The heroku URL of the functional, deployed application: https://alice-fitness-tracker.herokuapp.com/)  
 
   ## Screenshots
-  ![fitness-tracker](https://github.com/thutuephan/MASBH-HandyNoteTaker/blob/main/public/assets/images/Landing-page.PNG)
-  ![fitness-dashboard-graph](https://github.com/thutuephan/MASBH-HandyNoteTaker/blob/main/public/assets/images/Writing-new-note.PNG)
+  ![fitness-tracker](https://github.com/thutuephan/BGtfToEv-WO-Tracker/blob/main/public/images/fitness-tracker.png)
+  ![fitness-dashboard-graph](https://github.com/thutuephan/BGtfToEv-WO-Tracker/blob/main/public/images/fitness-tracker-dashboard.png)
 
   ## Credits
   * THU PHAN  
