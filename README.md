@@ -36,7 +36,8 @@
 
   ## Screenshots
   ![fitness-tracker](https://github.com/thutuephan/BGtfToEv-WO-Tracker/blob/main/public/images/fitness-tracker.png)
-  ![fitness-dashboard-graph](https://github.com/thutuephan/BGtfToEv-WO-Tracker/blob/main/public/images/fitness-tracker-dashboard.png)
+  ![fitness-tracker2](https://github.com/thutuephan/BGtfToEv-WO-Tracker/blob/main/public/images/fitness-tracker2.png)
+  ![fitness-dashboard-graph](https://github.com/thutuephan/BGtfToEv-WO-Tracker/blob/main/public/images/fitness-dashboard2.png)
 
   ## Credits
   * THU PHAN  
